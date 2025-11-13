@@ -12,12 +12,12 @@ const projects = [
   },
   {
     id: 2,
-    title: "Newspaper Project",
+    title: "Shopping Website",
     description:
-      "A responsive news portal built with React.js. It features category-wise news, dynamic routing, Firebase authentication (Email & Google login), and protected routes. Clean UI and smooth navigation using React Router and Context API.",
-    imageUrl: "/dragon.png",
-    liveUrl: "https://dragon-news-six-lime.vercel.app ",
-    githubUrl: "https://github.com/hridoy000111/dragon-news.git",
+      "This is a modern and responsive shopping website built with React and Tailwind CSS. The project features a clean UI, smooth navigation, and an interactive shopping experience. Users can browse various products, view details, and explore the site seamlessly on both desktop and mobile devices.",
+    imageUrl: "/shopping-image.PNG",
+    liveUrl: "https://shopping-website-fjox.vercel.app/ ",
+    githubUrl: "https://github.com/hridoy000111/shopping-website.git",
   },
   {
     id: 3,

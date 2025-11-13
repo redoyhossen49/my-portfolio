@@ -2,7 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 const NavBar = () => {
   return (
-    <nav className="bg-gradient-to-r from-blue-600 via-blue-400 to-blue-800 shadow-lg sticky top-0 z-50">
+    <nav className="bg-slate-900 text-white  shadow-lg sticky top-0 z-50">
       <div className="container mx-auto px-6 py-4 flex justify-between items-center rounded-b-lg shadow-lg">
         <h1
           className="text-xl 
@@ -30,6 +30,11 @@ const NavBar = () => {
             </Link>
           </li>
           <li>
+            <Link className="hover:text-yellow-500" to="/skills">
+              Skills
+            </Link>
+          </li>
+          <li>
             <Link className="hover:text-yellow-500" to="/contact">
               Contact
             </Link>
@@ -37,6 +42,11 @@ const NavBar = () => {
           <li>
             <Link className="hover:text-yellow-500" to="/resume">
               Resume
+            </Link>
+          </li>
+          <li>
+            <Link className="hover:text-yellow-500" to="/hero">
+              Hero
             </Link>
           </li>
         </ul>

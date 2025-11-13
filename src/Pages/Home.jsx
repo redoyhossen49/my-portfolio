@@ -6,15 +6,15 @@ import profile from "../assets/images/profile.jpg";
 
 const Home = () => {
   return (
-    <section className="min-h-screen bg-gradient-to-br from-blue-200 via-white to-purple-400 flex flex-col-reverse md:flex-row items-center justify-between px-4 sm:px-6 md:px-16 lg:px-24 xl:px-32 2xl:px-40 py-12 md:py-20 gap-10 relative">
-      {/* Text Section */}
+    <section className="min-h-screen bg-gradient-to-r from-indigo-50 to-purple-100 to-black flex flex-col-reverse md:flex-row items-center justify-between px-4 sm:px-6 md:px-16 lg:px-24 xl:px-32 2xl:px-40 py-12 md:py-20 gap-10 relative">
+      
       <div className="w-full md:w-1/2 text-center md:text-left space-y-5 animate-fade-in">
-        {/* Badge */}
+       
         <p className="inline-block bg-blue-100 text-blue-700 px-4 py-1 rounded-full text-xs sm:text-sm font-medium">
           Front-End Developer | React | Tailwind CSS
         </p>
 
-        {/* Name */}
+        
         <h2 className="text-sm sm:text-base md:text-lg text-gray-500">
           👋 Hello, I am
         </h2>
@@ -22,7 +22,7 @@ const Home = () => {
           Redoy Khan
         </h1>
 
-        {/* Typewriter */}
+        
         <h2 className="text-sm sm:text-base md:text-lg lg:text-xl text-gray-600 font-medium">
           <Typewriter
             words={[
@@ -35,7 +35,7 @@ const Home = () => {
             cursorStyle="_"
             typeSpeed={70}
             deleteSpeed={50}
-            delaySpeed={1500}
+            delaySpeed={2000}
           />
         </h2>
 
