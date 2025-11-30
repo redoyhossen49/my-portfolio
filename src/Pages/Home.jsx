@@ -6,15 +6,16 @@ import profile from "../assets/images/profile.jpg";
 
 const Home = () => {
   return (
-    <section className="min-h-screen bg-gradient-to-r from-indigo-50 to-purple-100 to-black flex flex-col-reverse md:flex-row items-center justify-between px-4 sm:px-6 md:px-16 lg:px-24 xl:px-32 2xl:px-40 py-12 md:py-20 gap-10 relative">
-      
+    <section
+      className="min-h-screen bg-black 
+        [background-image:linear-gradient(#333_1px,transparent_1px),linear-gradient(90deg,#333_1px,transparent_1px)] 
+        [background-size:100px_100px] flex flex-col-reverse md:flex-row items-center justify-between px-4 sm:px-6 md:px-16 lg:px-24 xl:px-32 2xl:px-40 py-12 md:py-20 gap-10 relative"
+    >
       <div className="w-full md:w-1/2 text-center md:text-left space-y-5 animate-fade-in">
-       
-        <p className="inline-block bg-blue-100 text-blue-700 px-4 py-1 rounded-full text-xs sm:text-sm font-medium">
+        <p className="inline-block bg-blue-100 text-blue-700 px-4 py-1 border-2 border-gray-500 rounded-full shadow-lg text-xs sm:text-sm font-medium animate-combinedColorAndBorder">
           Front-End Developer | React | Tailwind CSS
         </p>
 
-        
         <h2 className="text-sm sm:text-base md:text-lg text-gray-500">
           👋 Hello, I am
         </h2>
@@ -22,7 +23,6 @@ const Home = () => {
           Redoy Khan
         </h1>
 
-        
         <h2 className="text-sm sm:text-base md:text-lg lg:text-xl text-gray-600 font-medium">
           <Typewriter
             words={[
