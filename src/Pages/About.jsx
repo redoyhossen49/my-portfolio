@@ -1,15 +1,16 @@
-import React from "react";
+import { Typewriter } from "react-simple-typewriter";
 import profile from "../assets/images/profile.jpg";
 
 const About = () => {
+  const strongClass = "text-xl font-semibold animate-textColorChange";
   return (
     <section
       id="about"
-      className="min-h-screen bg-gradient-to-b from-blue-50 via-white to-blue-100 py-24 px-6 sm:px-16 md:px-24 flex items-center"
+      className="min-h-screen py-2  px-6  md:px-16 flex justify-center animate-topScaleIn"
     >
-      <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-center gap-16">
+      <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-center gap-12">
         {/* Image */}
-        <div className="flex-shrink-0 w-44 h-44 sm:w-56 sm:h-56 md:w-72 md:h-72 rounded-full overflow-hidden border-8 border-blue-500 shadow-xl transition-transform duration-500 hover:scale-105">
+        <div className="flex-shrink-0 w-44 h-44  md:w-72 md:h-72 rounded-full overflow-hidden border-8 border-blue-500 animate-borderColorChange shadow-xl transition-transform duration-500 hover:scale-105">
           <img
             src={profile}
             alt="Redoy Khan"
@@ -19,34 +20,50 @@ const About = () => {
         </div>
 
         {/* Text Content */}
-        <div className="flex-1 text-center md:text-left space-y-8">
-          <h2 className="text-5xl font-extrabold text-blue-900 drop-shadow-lg tracking-wide">
+        <div className="flex-1 text-center md:text-left space-y-4">
+          <h2 className="text-5xl font-extrabold text-blue-900 drop-shadow-lg tracking-wide animate-textColorChange">
             About Me
           </h2>
 
-          <p className="text-blue-800 text-lg leading-relaxed tracking-wide">
-            👋 Hi, I am{" "}
-            <strong className="text-blue-900 font-semibold">Redoy Khan</strong>,
-            a passionate Front-End Developer with over 3 years of experience. I
-            specialize in creating modern, responsive websites using{" "}
-            <strong className="text-blue-900 font-semibold">React.js</strong>{" "}
-            and{" "}
-            <strong className="text-blue-900 font-semibold">
-              Tailwind CSS
-            </strong>
-            . I love building clean and scalable user interfaces that provide
-            great user experiences.
+          <p className="text-gray-400 text-lg leading-relaxed tracking-wide">
+            <span className="inline-block animate-wave text-2xl">👋</span> Hi, I
+            am <strong className={strongClass}>Redoy Hossen</strong>, I'm a
+            passionate Front End developer with experience developing web
+            applications with <strong className={strongClass}> React.js</strong>
+            , <strong className={strongClass}>Next.js</strong>,{" "}
+            <strong className={strongClass}>Redux.js</strong>,{" "}
+            <strong className={strongClass}>Tailwind CSS</strong>,
+            <strong className={strongClass}>JavaScript</strong>,
+            <strong className={strongClass}>TypeScript & React Query</strong>{" "}
+            etc. Technologies. I am strongly interested in learning new
+            technologies and implementing them in my projects. I'm a
+            self-motivated,disciplined and hardworking individual who is always
+            ready to learn new things and work in a team.
           </p>
 
-          <p className="text-blue-700 text-lg leading-relaxed tracking-wide">
-            I am detail-oriented, committed to writing clean code, and always
-            eager to learn the latest web technologies. Whether you need a sleek
-            landing page, a full-fledged web application, or a user-friendly UI,
-            I am here to help bring your ideas to life.
+          <p className="text-gray-400 text-lg leading-relaxed tracking-wide">
+            When I'm not coding, you'll find me exploring new technologies,
+            contributing to open-source projects, or learning about the latest
+            trends in web development. I believe in continuous learning and
+            pushing the boundaries of what's possible on the web.
+          </p>
+          <p className="text-gray-400 text-lg leading-relaxed tracking-wide">
+            My goal is to bridge the gap between design and development,
+            creating seamless user experiences that are both visually stunning
+            and highly functional.
           </p>
 
-          <p className="text-blue-600 text-base italic tracking-wide">
-            ✨ Let's work together and build something amazing!
+          <p className="text-white text-base italic tracking-wide animate-textColorChange">
+            <span className="inline-block text-2xl animate-spinSlow">✨</span>{" "}
+            <Typewriter
+              words={["Let's work together and build something amazing!"]}
+              loop={false}
+              cursor
+              cursorStyle="|"
+              typeSpeed={70}
+              deleteSpeed={50}
+              delaySpeed={1000}
+            />
           </p>
         </div>
       </div>
