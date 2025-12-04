@@ -8,15 +8,15 @@ const Contact = () => {
   return (
     <section id="contact" className=" py-8 px-6  md:px-20 animate-topScaleIn">
       <div className="max-w-4xl mx-auto text-center rounded-2xl shadow-xl p-4">
-        <h2 className="inline-block  bg-black text-4xl mb-8 text-center font-extrabold px-8 py-2 border-4 text-gray-200  rounded-full   shadow-lightShadow animate-borderColorChange">
+        <h2 className="inline-block  bg-black text-4xl mb-8  font-extrabold px-8 py-2 border-4 text-gray-200  rounded-full   shadow-lightShadow animate-borderColorChange">
           Get in Touch
         </h2>
-        <p className="text-center text-gray-200 mb-10 text-lg md:text-xl">
+        <p className=" text-gray-200 mb-10 text-lg md:text-xl">
           I’m currently open to opportunities and collaborations. Fill out the
           form below or connect with me on social media.
         </p>
         <div className="bg-gray-600 max-w-4xl mx-auto   rounded-2xl shadow-xl p-8">
-          <h2 className="text-gray-100 text-4xl font-extrabold text-center mb-8">
+          <h2 className="text-gray-100 text-4xl font-extrabold  mb-8">
             Contact Me
           </h2>
           {/* Success Message */}
