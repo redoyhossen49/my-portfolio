@@ -10,7 +10,7 @@ const About = () => {
     >
       <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-center gap-12">
         {/* Image */}
-        <div className="flex-shrink-0 w-44 h-44  md:w-72 md:h-72 rounded-full overflow-hidden border-8 border-blue-500 animate-borderColorChange shadow-xl transition-transform duration-500 hover:scale-105">
+        <div className=" w-44 h-44  md:w-72 md:h-72 rounded-full overflow-hidden border-8  animate-borderColorChange  transition-transform duration-500 hover:scale-105">
           <img
             src={profile}
             alt="Redoy Khan"
@@ -21,7 +21,7 @@ const About = () => {
 
         {/* Text Content */}
         <div className="flex-1 text-center md:text-left space-y-4">
-          <h2 className="text-5xl font-extrabold text-blue-900 drop-shadow-lg tracking-wide animate-textColorChange">
+          <h2 className="text-5xl font-extrabold drop-shadow-lg tracking-wide animate-textColorChange">
             About Me
           </h2>
 
