@@ -13,7 +13,7 @@ const projects = [
     ],
     description:
       "I’m a frontend developer skilled in React, JavaScript, and Tailwind CSS. My portfolio features interactive projects with smooth animations, dynamic backgrounds, custom cursors, and seamless form handling using FormSpree. I focus on clean code and engaging user experiences.",
-    imageUrl: "/portfolio.png",
+    imageUrl: "/src/assets/images/home.png",
     liveUrl: "https://my-portfolio-ashen-psi-30.vercel.app",
     githubUrl: "https://github.com/hridoy000111/my-portfolio.git",
   },
