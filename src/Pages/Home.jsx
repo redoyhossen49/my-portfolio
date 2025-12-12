@@ -46,13 +46,13 @@ const Home = () => {
             >
               💻 Explore My Projects
             </Link>
-            <Link
+            <a
               href="/resume.pdf"
               download
               className="bg-blue-600 text-white px-6 py-2 rounded-full hover:bg-blue-700 duration-300 shadow-md text-sm sm:text-base animate-buttonFlow"
             >
               📄 Download Resume
-            </Link>
+            </a>
             <Link
               to="/contact"
               className="border border-blue-600 text-blue-600 px-6 py-2 rounded-full hover:bg-blue-600 hover:text-white duration-300 shadow-sm text-sm sm:text-base"
