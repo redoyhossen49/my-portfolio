@@ -10,6 +10,7 @@ import Projects from "./Pages/Projects";
 import Contact from "./Pages/Contact";
 import Resume from "./Pages/Resume";
 import Skills from "./Pages/Skills";
+import MenuProvider from "./components/context/MenuProvider";
 
 const router = createBrowserRouter([
   {
@@ -46,6 +47,8 @@ const router = createBrowserRouter([
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
-    <RouterProvider router={router} />
+    <MenuProvider>
+      <RouterProvider router={router} />
+    </MenuProvider>
   </React.StrictMode>
 );

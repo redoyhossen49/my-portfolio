@@ -28,7 +28,7 @@ const Contact = () => {
 
           {/* Contact Form */}
           <form
-            action="https://formspree.io/f/xrbyallp" // তোমার Form ID বসাও
+            action="https://formspree.io/f/xrbyallp"
             method="POST"
             className="grid grid-cols-1 gap-6   "
             onSubmit={() => setSubmitted(true)}
@@ -38,7 +38,7 @@ const Contact = () => {
               name="name"
               required
               placeholder="Your full name"
-              className="w-1/2 mx-auto rounded-lg text-white bg-gray-500 border border-gray-300 px-4 py-3 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent transition"
+              className="w-full md:w-1/2 mx-auto rounded-lg text-white bg-gray-500 border border-gray-300 px-4 py-3 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent transition"
             />
 
             <input
@@ -46,7 +46,7 @@ const Contact = () => {
               name="email"
               required
               placeholder="you@example.com"
-              className="w-1/2 mx-auto rounded-lg border text-white bg-gray-500 border-gray-300 px-4 py-3 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent transition"
+              className="w-full md:w-1/2 mx-auto rounded-lg border text-white bg-gray-500 border-gray-300 px-4 py-3 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent transition"
             />
 
             <textarea
@@ -54,7 +54,7 @@ const Contact = () => {
               rows="6"
               required
               placeholder="Write your message here..."
-              className="w-1/2 mx-auto rounded-lg bg-gray-500 text-white border border-gray-300 px-4 py-3 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent transition"
+              className="w-full md:w-1/2 mx-auto rounded-lg bg-gray-500 text-white border border-gray-300 px-4 py-3 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent transition"
             />
 
             <button

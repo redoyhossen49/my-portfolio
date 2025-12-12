@@ -11,29 +11,29 @@ export default {
       },
         keyframes: {
         textColorChange: {
-          "0%": { color: "#fa1010ff" },
-          "25%": { color: "#7beb3bff" },
-          "50%": { color: "rgba(230, 212, 17, 1)" },
-          "75%": { color: "#ffaa00ff" },
+          "0%": { color: "#e84141ff" },
+          
+          
+          "50%": { color: "#ffaa00ff" },
           "100%": { color: "#d6439eff" }
         },
         textColorChange1: {
           "0%": { color: "#ed4dedff" },
-          "25%": { color: "#ffaa00" },
+         
           "50%": { color: "rgba(198, 177, 57, 1)" },
-          "75%":  { color: "#83d723ff" },
+        
           "100%":{ color: "#d74355ff" },
         },
         backGroundColorChange: {
        "0%": { backgroundColor: "#e45c5cff" },
-          "25%": { backgroundColor: "#439f22ff" },
+          "25%": { backgroundColor: "#de8282ff" },
           "50%": { backgroundColor: "rgba(230, 212, 17, 1)" },
           "75%": { backgroundColor: "#cf992eff" },
           "100%": { backgroundColor: "#dd58aaff" }
         },
          borderColorChange: {
-          "0%, 50%": { borderColor: "#ff0000"},
-          "25%": { borderColor: "#00ff00"  },    
+          "0%, 50%": { borderColor: "#f26464ff"},
+  
             
           "100%": { borderColor: "#ff00ff"  },
         },

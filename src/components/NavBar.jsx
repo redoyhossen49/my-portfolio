@@ -1,8 +1,15 @@
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
+import { useContext } from "react";
+
+import { CiMenuBurger } from "react-icons/ci";
+import { IoMdClose } from "react-icons/io";
+import { menuContext } from "./context/MenuProvider";
+
 const NavBar = () => {
+  const { menuOpen, setMenuOpen } = useContext(menuContext);
   return (
     <nav className="bg-slate-900  shadow-lg sticky top-0 z-50">
-      <div className="container mx-auto px-6 py-2 flex justify-between items-center rounded-b-lg shadow-lg">
+      <div className="container mx-auto px-6 py-2 flex justify-between items-center rounded-b-lg ">
         <div className="text-white flex gap-6 items-center ">
           <p className="hidden  md:inline-flex md:block  md:items-center md:justify-center md:w-12 md:h-12 md:rounded-full  md:text-white md:font-extrabold md:animate-combinedbackGroundAndspinSlow">
             {"</>"}
@@ -29,39 +36,164 @@ const NavBar = () => {
           </div>
         </div>
 
-        <ul className=" bg-black flex flex-wrap justify-center md:flex-row items-center gap-4 md:gap-6 text-white font-medium text-sm  md:text-lg border-2 border-black py-2 px-4 rounded-full">
+        <ul className="hidden text-white bg-black lg:flex  lg:flex-row lg:justify-center lg:items-center gap-4 lg:gap-6 text-white font-medium   lg:text-lg  py-2 px-4 rounded-full">
           <li>
-            <Link className="hover:text-yellow-500 " to="/">
+            <NavLink
+              to="/"
+              className={({ isActive }) =>
+                isActive ? "text-yellow-500" : "hover:text-yellow-500"
+              }
+            >
               Home
-            </Link>
+            </NavLink>
           </li>
+
           <li>
-            <Link className="hover:text-yellow-500" to="/about">
+            <NavLink
+              to="/about"
+              className={({ isActive }) =>
+                isActive ? "text-yellow-500" : "hover:text-yellow-500"
+              }
+            >
               About
-            </Link>
+            </NavLink>
           </li>
+
           <li>
-            <Link className="hover:text-yellow-500" to="/projects">
+            <NavLink
+              to="/projects"
+              className={({ isActive }) =>
+                isActive ? "text-yellow-500" : "hover:text-yellow-500"
+              }
+            >
               Projects
-            </Link>
+            </NavLink>
           </li>
+
           <li>
-            <Link className="hover:text-yellow-500" to="/skills">
+            <NavLink
+              to="/skills"
+              className={({ isActive }) =>
+                isActive ? "text-yellow-500" : "hover:text-yellow-500"
+              }
+            >
               Skills
-            </Link>
+            </NavLink>
           </li>
+
           <li>
-            <Link className="hover:text-yellow-500" to="/contact">
+            <NavLink
+              to="/contact"
+              className={({ isActive }) =>
+                isActive ? "text-yellow-500" : "hover:text-yellow-500"
+              }
+            >
               Contact
-            </Link>
+            </NavLink>
           </li>
+
           <li>
-            <Link className="hover:text-yellow-500" to="/resume">
+            <NavLink
+              to="/resume"
+              className={({ isActive }) =>
+                isActive ? "text-yellow-500" : "hover:text-yellow-500"
+              }
+            >
               Resume
-            </Link>
+            </NavLink>
           </li>
         </ul>
+        <div className="lg:hidden">
+          <button onClick={() => setMenuOpen(!menuOpen)}>
+            {menuOpen ? (
+              <IoMdClose className="w-6 h-6 text-white"></IoMdClose>
+            ) : (
+              <CiMenuBurger className="w-6 h-6 text-white"></CiMenuBurger>
+            )}
+          </button>
+        </div>
       </div>
+      {menuOpen && (
+        <div
+          className={`lg:hidden flex flex-col items-center space-y-2 py-4 font-josefin  overflow-hidden transition-all duration-500 ease-in-out transform origin-top ${
+            menuOpen
+              ? "max-h-96 opacity-100 scale-y-100"
+              : "max-h-0 opacity-0 scale-y-0"
+          }`}
+        >
+          <NavLink
+            to="/"
+            onClick={() => setMenuOpen(false)}
+            className={({ isActive }) =>
+              `block ${
+                isActive ? "text-yellow-500" : "text-white"
+              } hover:text-yellow-500`
+            }
+          >
+            Home
+          </NavLink>
+
+          <NavLink
+            to="/about"
+            onClick={() => setMenuOpen(false)}
+            className={({ isActive }) =>
+              `block ${
+                isActive ? "text-yellow-500" : "text-white"
+              } hover:text-yellow-500`
+            }
+          >
+            About
+          </NavLink>
+
+          <NavLink
+            to="/projects"
+            onClick={() => setMenuOpen(false)}
+            className={({ isActive }) =>
+              `${
+                isActive ? "text-yellow-500" : "text-white"
+              } hover:text-yellow-500`
+            }
+          >
+            Projects
+          </NavLink>
+
+          <NavLink
+            to="/skills"
+            onClick={() => setMenuOpen(false)}
+            className={({ isActive }) =>
+              `${
+                isActive ? "text-yellow-500" : "text-white"
+              } hover:text-yellow-500`
+            }
+          >
+            Skills
+          </NavLink>
+
+          <NavLink
+            to="/contact"
+            onClick={() => setMenuOpen(false)}
+            className={({ isActive }) =>
+              `block ${
+                isActive ? "text-yellow-500" : "text-white"
+              } hover:text-yellow-500`
+            }
+          >
+            Contact
+          </NavLink>
+
+          <NavLink
+            to="/resume"
+            onClick={() => setMenuOpen(false)}
+            className={({ isActive }) =>
+              `${
+                isActive ? "text-yellow-500" : "text-white"
+              } hover:text-yellow-500`
+            }
+          >
+            Resume
+          </NavLink>
+        </div>
+      )}
     </nav>
   );
 };

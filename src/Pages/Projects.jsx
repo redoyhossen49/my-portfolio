@@ -15,7 +15,7 @@ const projects = [
       "I’m a frontend developer skilled in React, JavaScript, and Tailwind CSS. My portfolio features interactive projects with smooth animations, dynamic backgrounds, custom cursors, and seamless form handling using FormSpree. I focus on clean code and engaging user experiences.",
     imageUrl: "/src/assets/images/home.png",
     liveUrl: "https://my-portfolio-ashen-psi-30.vercel.app",
-    githubUrl: "https://github.com/hridoy000111/my-portfolio.git",
+    githubUrl: "https://github.com/redoyhossen49/my-portfolio",
   },
   {
     id: 2,
@@ -25,17 +25,25 @@ const projects = [
       "This is a modern and responsive shopping website built with React and Tailwind CSS. The project features a clean UI, smooth navigation, and an interactive shopping experience. Users can browse various products, view details, and explore the site seamlessly on both desktop and mobile devices.",
     imageUrl: "/shopping-image.PNG",
     liveUrl: "https://shopping-website-fjox.vercel.app/ ",
-    githubUrl: "https://github.com/hridoy000111/shopping-website.git",
+    githubUrl: "https://github.com/redoyhossen49/shopping-website",
   },
   {
     id: 3,
-    title: "A Weather App",
-    skillsAndtechnologies: ["React.js", "JavaScript", "Tailwind CSS"],
+    title: "Blood donation Website",
+    skillsAndtechnologies: [
+      "React.js",
+      "JavaScript",
+      "Tailwind CSS",
+
+      "LocalStorage ",
+      "Typewriter Effect ",
+      " Context API",
+    ],
     description:
-      "A simple and responsive weather application built with React.js. It fetches real-time weather data using a public API and displays temperature, location, and weather conditions. Clean UI with smooth user experience.",
-    imageUrl: "/weather.png",
-    liveUrl: "https://weather-app-rosy-two-68.vercel.app",
-    githubUrl: "https://github.com/hridoy000111/weather-app.git",
+      " Built a full-featured Blood Donation website allowing users to post blood   requests and donors to respond.  Built user-friendly interfaces with React and Tailwind CSS, using Context API for smooth state management and dynamic updates, ensuring responsive layouts and seamless navigation.",
+    imageUrl: "/bloodWebsite.png",
+    liveUrl: "https://blood-donation-website-omega.vercel.app/",
+    githubUrl: "https://github.com/redoyhossen49/Blood-Donation-Website",
   },
 ];
 
@@ -47,7 +55,7 @@ const Projects = () => {
           Explore My Projects
         </p>
 
-        <div className="grid gap-10 md:grid-cols-3">
+        <div className="grid gap-16 lg:gap-10  lg:grid-cols-3">
           {projects.map(
             ({
               id,
@@ -60,13 +68,13 @@ const Projects = () => {
             }) => (
               <div
                 key={id}
-                className="bg-gray-600 rounded-lg shadow-lg overflow-hidden hover:shadow-2xl hover:scale-105 transition-transform duration-1000 ease-in-out
+                className="bg-gray-600   rounded-lg shadow-lg overflow-hidden hover:shadow-2xl hover:scale-105 transition-transform duration-1000 ease-in-out
 "
               >
                 <img
                   src={imageUrl}
                   alt={title}
-                  className="w-full h-48 object-cover"
+                  className="w-full h-auto object-cover"
                   loading="lazy"
                 />
                 <div className="p-6">
@@ -89,7 +97,7 @@ const Projects = () => {
                       href={liveUrl}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="text-blue-500 hover:text-blue-800 font-medium animate-textColorChange1"
+                      className="text-blue-500 hover:text-blue-800 font-medium "
                     >
                       Live Demo
                     </a>
@@ -97,7 +105,7 @@ const Projects = () => {
                       href={githubUrl}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="text-blue-400 hover:text-gray-800 animate-textColorChange1"
+                      className="text-blue-400 hover:text-blue-800 font-medium "
                       aria-label={`${title} GitHub Repository`}
                     >
                       GitHub

@@ -8,7 +8,7 @@ const About = () => {
       id="about"
       className="min-h-screen py-2  px-6  md:px-16 flex justify-center animate-topScaleIn"
     >
-      <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-center gap-12">
+      <div className="max-w-7xl mx-auto flex flex-col lg:flex-row items-center justify-center gap-12">
         {/* Image */}
         <div className=" w-44 h-44  md:w-72 md:h-72 rounded-full overflow-hidden border-8  animate-borderColorChange  transition-transform duration-500 hover:scale-105">
           <img
@@ -20,7 +20,7 @@ const About = () => {
         </div>
 
         {/* Text Content */}
-        <div className="flex-1 text-center md:text-left space-y-4">
+        <div className="flex-1 text-center lg:text-left space-y-4">
           <h2 className="text-5xl font-extrabold drop-shadow-lg tracking-wide animate-textColorChange">
             About Me
           </h2>
