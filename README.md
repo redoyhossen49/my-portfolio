@@ -131,7 +131,7 @@ Add your project screenshots here:
 
 ### ✉️ Contact Page
 ![Contact](images/contact.png)
-
+	<img width="597" alt="Ali Spittel's inspiring tweet about developer portfolios" src="images/contact.png">
 
 
 
