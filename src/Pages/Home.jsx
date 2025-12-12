@@ -6,6 +6,7 @@ import About from "./About";
 import Skills from "./Skills";
 import Projects from "./Projects";
 import Contact from "./Contact";
+import { Link } from "react-router-dom";
 
 const Home = () => {
   return (
@@ -39,38 +40,38 @@ const Home = () => {
 
           {/* Buttons */}
           <div className="flex flex-col md:flex-row items-center justify-center  gap-4 py-6">
-            <a
+            <Link
               href="/projects"
               className="border border-blue-600 text-blue-600 px-6 py-2 rounded-full hover:bg-blue-600 hover:text-white duration-300 shadow-sm text-sm sm:text-base"
             >
               💻 Explore My Projects
-            </a>
-            <a
+            </Link>
+            <Link
               href="/resume.pdf"
               download
               className="bg-blue-600 text-white px-6 py-2 rounded-full hover:bg-blue-700 duration-300 shadow-md text-sm sm:text-base animate-buttonFlow"
             >
               📄 Download Resume
-            </a>
-            <a
+            </Link>
+            <Link
               href="/contact"
               className="border border-blue-600 text-blue-600 px-6 py-2 rounded-full hover:bg-blue-600 hover:text-white duration-300 shadow-sm text-sm sm:text-base"
             >
               📩 Contact Me
-            </a>
+            </Link>
           </div>
 
           {/* Social Icons */}
           <div className="flex gap-6 py-2 justify-center  text-2xl md:text-4xl text-blue-600 ">
             <a
-              href="https://github.com/hridoy000111"
+              href="https://github.com/redoyhossen49"
               target="_blank"
               rel="noreferrer"
             >
               <FaGithub className="hover:text-white duration-300 animate-wave" />
             </a>
             <a
-              href="https://linkedin.com/in/yourusername"
+              href="https://linkedin.com/in/redoyhossen49"
               target="_blank"
               rel="noreferrer"
             >
