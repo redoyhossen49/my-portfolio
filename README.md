@@ -121,16 +121,17 @@ Add your project screenshots here:
 ## 📸 Screenshots
 
 ### 🏠 Home Page
-![Home](./public/screenshot/home.png)
+![Home](images/home.png)
 
 ### 📂 Projects Page
-![Projects](./public/screenshot/projects.png)
+![Projects](images/projects.png)
 
 ### 🛠 Skills Page
-![Skills](./public/screenshot/skills.png)
+![Skills](images/skills.png)
 
 ### ✉️ Contact Page
-![Contact](./public/screenshot/contact.png)
+![Contact](images/contact.png)
+
 
 
 
