@@ -114,23 +114,24 @@ The portfolio includes a working contact form powered by **Formspree**.
   <button type="submit">Send</button>
 </form>
 
-## 📸 Screenshots
+
 
 Add your project screenshots here:
 
 ## 📸 Screenshots
 
 ### 🏠 Home Page
-![Home](public/screenshot/home.png)
+![Home](./public/screenshot/home.png)
 
 ### 📂 Projects Page
-![Projects](public//screenshot//projects.png)
+![Projects](./public/screenshot/projects.png)
 
 ### 🛠 Skills Page
-![Skills](public/screenshot/skills.png)
+![Skills](./public/screenshot/skills.png)
 
 ### ✉️ Contact Page
-![Contact](public/screenshot/contact.png)
+![Contact](./public/screenshot/contact.png)
+
 
 
 
