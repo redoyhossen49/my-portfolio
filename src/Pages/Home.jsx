@@ -26,11 +26,11 @@ const Home = () => {
 
           <p className="text-xl text-white md:text-2xl max-w-3xl  mx-auto">
             I craft
-            <span className="animate-textColorChange font-bold ">
+            <span className="animate-textColorChange mx-2 font-bold ">
               beautiful
             </span>
             ,
-            <span className="animate-textColorChange1 ml-2 font-bold">
+            <span className="animate-textColorChange1 mx-2 font-bold">
               interactive
             </span>
             web experiences with modern technologies.
