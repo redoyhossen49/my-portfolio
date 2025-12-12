@@ -41,7 +41,7 @@ const Home = () => {
           {/* Buttons */}
           <div className="flex flex-col md:flex-row items-center justify-center  gap-4 py-6">
             <Link
-              href="/projects"
+              to="/projects"
               className="border border-blue-600 text-blue-600 px-6 py-2 rounded-full hover:bg-blue-600 hover:text-white duration-300 shadow-sm text-sm sm:text-base"
             >
               💻 Explore My Projects
@@ -54,7 +54,7 @@ const Home = () => {
               📄 Download Resume
             </Link>
             <Link
-              href="/contact"
+              to="/contact"
               className="border border-blue-600 text-blue-600 px-6 py-2 rounded-full hover:bg-blue-600 hover:text-white duration-300 shadow-sm text-sm sm:text-base"
             >
               📩 Contact Me
